@@ -15,6 +15,8 @@ Durante a imersão, vamos desenvolver um novo projeto com Next.js, aplicar conce
   
   Por fim, foi feito o deploy do Aluracord na <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
   
-  
+  <p align="center">
+  <img src="aluracord-aula1.gif" width="450px">
+  </p>
 
 </details>
