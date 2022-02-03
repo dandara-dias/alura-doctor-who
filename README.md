@@ -18,5 +18,18 @@ Durante a imersão, vamos desenvolver um novo projeto com Next.js, aplicar conce
   <p align="center">
   <img src="aluracord-aula1.gif" width="450px">
   </p>
+</details>
 
+<details>
+  <summary>Aula 2</summary>
+  
+  Na segunda aula, aprendemos a lidar com o state do React e como trabalhar com eventos como onClick e onSubmit. Na página de login, agora é possível escrever o nome do usuário do GitHub para entrar no chat. Também demos início a página de chat, ainda sem muitas personalizações.
+  
+  Como detalhes adicionais, o nome e foto de usuário são alterados automaticamente na área ao lado do formulário, onde o nome também conta com um link para o perfil real do GitHub.
+  
+  Por fim, foi feito o deploy do Aluracord na <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
+  
+  <p align="center">
+  <img src="aluracord-aula2.gif" width="450px">
+  </p>
 </details>
