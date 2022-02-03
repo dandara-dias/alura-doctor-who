@@ -33,3 +33,17 @@ Durante a imersão, vamos desenvolver um novo projeto com Next.js, aplicar conce
   <img src="aluracord-aula2.gif" width="450px">
   </p>
 </details>
+
+<details>
+  <summary>Aula 3</summary>
+  
+  Na terceira aula, criamos e estilizamos a estrutura do chat e fizemos ele funcionar inicialmente sem nenhum Back-End. Entendemos um pouco mais de como podemos trabalhar com state no React e criamos um campo que ao apertarmos o Enter no teclado, envia a mensagem para o chat.
+  
+  Como detalhe adicional, também foi criado um botão para a mensagem ser enviada clicando.
+  
+  Por fim, foi feito o deploy do Aluracord na <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
+  
+  <p align="center">
+  <img src="aluracord-aula3.gif" width="450px">
+  </p>
+</details>
