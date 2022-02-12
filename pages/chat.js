@@ -1,18 +1,40 @@
 import { Box, Text, TextField, Image, Button } from '@skynexui/components';
 import React from 'react';
 import appConfig from '../config.json';
+import { createClient } from '@supabase/supabase-js';
+import UserInfo from '../components/UserInfo';
+
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pcGFqaXRodHVkZGFpeGNtbHVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ2OTk4NjQsImV4cCI6MTk2MDI3NTg2NH0.nkdW1k3lWHqRGL3nLA0rCS9nLaoVEDHQRDEg0sBrnEs';
+const SUPABASE_URL = 'https://mipajithtuddaixcmluq.supabase.co';
+const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+// senha: aluracord2022!
 
 function ChatPage() {
   const [message, setMessage] = React.useState('');
   const [messageList, setMessageList] = React.useState([]);
 
+  React.useEffect(() => {
+    const supabaseData = supabaseClient.from('messages').select('*')
+      .order('id', { ascending: false })
+      .then(({ data }) => {
+        setMessageList(data);
+      });
+  }, []);
+
   function handleSubmit(newMessage) {
     const message = {
-      id: messageList.length + 1,
+      // id: messageList.length + 1,
       from: 'dandara-dias',
       text: newMessage,
     };
-    setMessageList([message, ...messageList]);
+
+    supabaseClient.from('messages').insert([
+      message
+    ])
+    .then(({ data }) => {
+      setMessageList([data[0], ...messageList]);
+    });
+
     setMessage('');
   }
 
@@ -137,7 +159,7 @@ function Header() {
 }
 
 function MessageList(props) {
-  console.log('MessageList', props);
+  const [userInfoState, setUserInfoState] = React.useState(false);
   return (
     <Box
       tag="ul"
@@ -169,7 +191,8 @@ function MessageList(props) {
                 marginBottom: '8px',
               }}
             >
-              <Image
+              <UserInfo isUserInfoOpen={userInfoState} user={message.from} />
+              {/* <Image
                 styleSheet={{
                   width: '20px',
                   height: '20px',
@@ -177,8 +200,8 @@ function MessageList(props) {
                   display: 'inline-block',
                   marginRight: '8px',
                 }}
-                src={`https://github.com/dandara-dias.png`}
-              />
+                src={`https://github.com/${message.from}.png`}
+              /> */}
               <Text tag="strong">
                 {message.from}
               </Text>
