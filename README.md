@@ -47,3 +47,17 @@ Durante a imersão, vamos desenvolver um novo projeto com Next.js, aplicar conce
   <img src="aluracord-aula3.gif" width="450px">
   </p>
 </details>
+
+<details>
+  <summary>Aula 4</summary>
+  
+  Na quarta aula, aprendemos a utilizar o <a href="https://app.supabase.io/">Supabase</a>, uma ferramenta <i>Back-end as a Service</i>, a fim de termos um banco de dados <i>real time</i> que guarda as mensagens do chat.
+  
+  Como detalhe adicional, ao clicar na foto da pessoa que enviou a mensagem no chat, é aberta uma janela com informações do seu usuário do GitHub, bem como um link para seu perfil no username.
+  
+  Por fim, foi feito o deploy do Aluracord na  <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
+  
+  <p align="center">
+  <img src="aluracord-aula3.gif" width="450px">
+  </p>
+</details>
