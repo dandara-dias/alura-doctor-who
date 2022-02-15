@@ -44,8 +44,8 @@ export default function HomePage() {
         styleSheet={{
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           backgroundColor: appConfig.theme.colors.primary[500],
-          backgroundImage: 'url(https://wallpapercave.com/wp/wp6146839.jpg)',
-          backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
+          backgroundImage: 'url(https://images8.alphacoders.com/690/thumb-1920-690060.jpg)',
+          backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', backgroundBlendMode: 'multiply',
         }}
       >
         <Box
@@ -69,7 +69,7 @@ export default function HomePage() {
             onSubmit={ function handleSubmit(event) {
               event.preventDefault();
               // window.location.href = '/chat';
-              router.push('/chat');
+              router.push(`/chat?username=${username}`);
             }}
             styleSheet={{
               display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
