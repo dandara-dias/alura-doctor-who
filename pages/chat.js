@@ -209,7 +209,7 @@ function MessageList(props) {
       tag="ul"
       styleSheet={{
         overflow: 'scroll',
-        overflowY: 'hidden',
+        overflowX: 'hidden',
         display: 'flex',
         flexDirection: 'column-reverse',
         flex: 1,
