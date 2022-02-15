@@ -55,9 +55,23 @@ Durante a imersão, vamos desenvolver um novo projeto com Next.js, aplicar conce
   
   Como detalhe adicional, ao clicar na foto da pessoa que enviou a mensagem no chat, é aberta uma janela com informações do seu usuário do GitHub, bem como um link para seu perfil no username.
   
-  Por fim, foi feito o deploy do Aluracord na  <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
+  Por fim, foi feito o deploy do Aluracord na <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
   
   <p align="center">
   <img src="aluracord-aula4.gif" width="450px">
+  </p>
+</details>
+
+<details>
+  <summary>Aula 5</summary>
+  
+  Na quinta e última aula, fizemos uma pequena validação de username, implementamos um botão com figurinhas temáticas, e deixamos o chat o mais <i>real time</i> possível.
+  
+  Como detalhe adicional, foi adicionada uma tela de <i>loading</i> antes do chat renderizar e foram alteradas as imagens de fundo da tela inicial e chat.
+  
+  Por fim, foi feito o deploy do Aluracord na <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
+  
+  <p align="center">
+  <img src="aluracord-aula5.gif" width="450px">
   </p>
 </details>
