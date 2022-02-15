@@ -91,6 +91,7 @@ export default function HomePage() {
             /> */}
             <TextField
               // value={ username }
+              placeholder='insira o user do github'
               onChange={ function handleChange(event) {
                 const typedUsername = event.target.value;
 
