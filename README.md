@@ -66,7 +66,7 @@ Durante a imersão, desenvolvemos um novo projeto com Next.js, aplicamos conceit
 O deploy da aplicação pode ser acessado na <a href="https://alura-doctor-who.vercel.app/">Vercel</a>.
 
   <p align="center">
-  <img src="aluracord-aula5.gif" width="800px">
+  <img src="alura.gif" width="800px">
   </p>
 
 ## 🚀 Como executar o projeto
